@@ -10,11 +10,11 @@ jobs:
     - name: android-recovery-action
       uses: XenonTheInertG/android-recovery-action@v2.1.2
       env:
-       MANIFEST: ""
+       MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni"
        DT_LINK: "https://github.com/Gamer09CF/lineage-twrp-android_device_nothing_Spacewar"
        VENDOR: "nothing"
        CODENAME: "Spacewar"
        KERNEL_LINK: "https://github.com/LineageOS/android_kernel_nothing_sm7325"
        TARGET: "bootimage"
        FLAVOR: "userdebug"
-       TZ: "Dhaka/Bangladesh"
+       TZ: "Asia/Qatar"
