@@ -1,0 +1,20 @@
+name: Lineage OS 22.2 Spacewar TWRP test
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+jobs:
+ work:
+    runs-on: ubuntu-latest
+    steps:
+    - name: android-recovery-action
+      uses: XenonTheInertG/android-recovery-action@v2.1.2
+      env:
+       MANIFEST: ""
+       DT_LINK: "https://github.com/Gamer09CF/lineage-twrp-android_device_nothing_Spacewar"
+       VENDOR: "nothing"
+       CODENAME: "Spacewar"
+       KERNEL_LINK: "https://github.com/LineageOS/android_kernel_nothing_sm7325"
+       TARGET: "bootimage"
+       FLAVOR: "userdebug"
+       TZ: "Dhaka/Bangladesh"
